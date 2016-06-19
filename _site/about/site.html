@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>$this->about() - Albert Stefanov</title>
+	<title>About(this)</title>
 	
-	<meta name="$this->about() - Albert Stefanov">
+	<meta name="About(this) - Albert Stefanov">
 	<script
 	src="https://code.jquery.com/jquery-1.12.4.min.js"
 	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
@@ -31,7 +31,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#home" onclick="">
-          using Site
+          Albert Stefanov
         </a>
       </div>
       <div class="collapse navbar-collapse" id="menunav">
@@ -39,13 +39,13 @@
           
           
           <li>
-            <a href="/">Main()</a>
+            <a href="/">Site.Main()</a>
           </li>
           
           
           
           <li>
-            <a href="/about/">$this->creator()->biography;</a>
+            <a href="/about/">About(this.creator())</a>
           </li>
           
           
@@ -57,7 +57,7 @@
           
           
           <li class="active">
-            <a href="/about/site" class="active">$this->about()</a>
+            <a href="/about/site" class="active">About(this)</a>
           </li>
           
           
@@ -74,18 +74,24 @@
 </header>
 
   <div class="container-fluid">
-    <div class="col-md-8 col-md-offset-2">
-      <header class="page-header">
-	<h1 class="page-title">$this->about()</h1>
-</header>
-
-<div class="page-content">
+      <div class="page-content">
 	<div class="aboutsite">
-Zdr kp
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp">	<span class="k">public</span> <span class="k">static</span> <span class="n">User</span> <span class="n">Site</span><span class="p">.</span><span class="nf">creator</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="n">User</span><span class="p">::</span><span class="nf">name</span><span class="p">(</span><span class="s">"Albert Stefanov"</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">About</span><span class="p">(</span><span class="n">Site</span> <span class="n">site</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">User</span> <span class="n">creator</span> <span class="p">=</span> <span class="n">Site</span><span class="p">.</span><span class="nf">creator</span><span class="p">();</span>
+		<span class="n">Uri</span> <span class="n">sourceCode</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Uri</span><span class="p">(</span><span class="s">"https://github.com/aastefanov/aastefanov.github.io/"</span><span class="p">);</span>
+	<span class="p">}</span>
+	</code></pre></figure>
+
 </div>
 
 </div>
-    </div>
   </div>
 
   

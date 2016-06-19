@@ -1,24 +1,37 @@
 ---
 layout: page
-title: Main()
+title: Site.Main()
 permalink: /
 ---
 <div class="home">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
 
 {% highlight csharp %}
 class Site
 {
+
 	public static void Main()
 	{
-		Console.WriteLine("What do you want to do?");
-		string action = Console.ReadLine();
-
-		if(action == "F*ck you, mate!")
+		User creator = self.creator();
+		User client = User.current();
+		if(client.hates(creator))
 		{
 			Leave(DateTime.now);
+		}
+		else
+		{
+			Welcome();
+		}
+
+		if(client.interestedIn(creator))
+		{
+			goto About(creator);
 		}
 	}
 }
 {% endhighlight %}
 
+		</div>
+	</div>
 </div>

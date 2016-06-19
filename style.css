@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic");
+
+body {
+	display: none; /* Ugly JS Fix */
+	padding-top: 70px;
+	font-family: 'Ubuntu', Arial, Helvetica;
+}
+
+p {
+	text-align: justify;
+}
+
+
+#pages > div {
+	display: none;
+}
+
+#pages > div:target {
+	display: block;
+}
+
+.usedlogo {
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+	height: 100px;
+	width: auto;
+}
+
+#bootstrap-big {
+	height: 200px;
+	width: auto;
+}

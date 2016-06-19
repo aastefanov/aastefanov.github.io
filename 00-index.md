@@ -13,9 +13,9 @@ class Site
 
 	public static void Main()
 	{
-		User creator = self.creator();
+		User creator = this.creator();
 		User client = User.current();
-		if(client.hates(creator))
+		if(!(client.likes(creator)))
 		{
 			Leave(DateTime.now);
 		}

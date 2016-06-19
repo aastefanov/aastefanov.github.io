@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic");
 
 body {
-	display: none; /* Ugly JS Fix */
+	/*display: none;  Ugly JS Fix */
 	padding-top: 70px;
 	font-family: 'Ubuntu', Arial, Helvetica;
 }

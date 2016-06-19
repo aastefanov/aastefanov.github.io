@@ -24,7 +24,7 @@ class Site
 			Welcome();
 		}
 
-		if(client.interestedAbout(]creator))
+		if(client.interestedAbout(creator))
 		{
 			goto About(creator);
 		}
